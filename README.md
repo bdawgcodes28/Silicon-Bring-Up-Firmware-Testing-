@@ -63,3 +63,38 @@ can be viewed here: [MPW-5 ALU_XOR](https://github.com/Janavind/My_alu_xor). See
 
 ![MPW-5 ALU XOR Block Diagram](ALUXOR.png)
 
+## Flashing Firmware to Board
+
+These instructions are based on firmware developed to test the MPW-5 ALU XOR efabless chip. Adapt instructions based
+on your own directories and firmware tests.
+
+Clone this repository
+
+```bash
+git clone https://github.com/bdawgcodes28/Silicon-Bring-Up-Firmware-Testing-.git
+```
+
+Navigate to firmware from repository root
+
+```bash
+cd firmware/chipignite/ALUtest
+
+ls
+```
+
+Flash firmware to board by running the following commands
+
+```bash
+make clean hex
+
+make flash
+```
+
+Firmware output can be viewed by running the following
+
+```bash
+sudo screen /dev/ttyUSB0 9600
+```
+
+Once the blank screen appears press the reset button on the board and the UART should write the output.
+From there, observe behavior of the design and compare it to the expected results.
