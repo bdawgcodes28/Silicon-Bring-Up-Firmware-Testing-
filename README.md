@@ -1,4 +1,4 @@
-# Caravel Board
+# Caravel Board Silicon Bring-up
 
 This repo provides firmware examples, flash programming and diagnostic tools for testing
 Open MPW and chipIgnite projects using Caravel.  It also provides schematics, layout and gerber files for PCB evaluation and breakout boards.
