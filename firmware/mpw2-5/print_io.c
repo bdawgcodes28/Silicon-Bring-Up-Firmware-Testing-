@@ -1,5 +1,7 @@
 #include "print_io.h"
 
+void delay(unsigned int d);
+
 void putchar(uint32_t c)
 {
 	if (c == '\n')
