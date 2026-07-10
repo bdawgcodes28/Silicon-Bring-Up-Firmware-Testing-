@@ -5,7 +5,7 @@ Open MPW and chipIgnite projects using Caravel.  It also provides schematics, la
 
 Additionally, it contains firmware developed to test the MPW-5 (ALU XOR) chip. [MPW-5 ALU_XOR](https://github.com/Janavind/My_alu_xor)
 
-## chipIgnite Projects (including Stanford)
+## ChipIgnite Projects (including Stanford)
 
 See the README for testing projects here -- https://github.com/efabless/caravel_board/tree/main/firmware/chipignite#readme
 
