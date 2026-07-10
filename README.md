@@ -3,9 +3,7 @@
 This repo provides firmware examples, flash programming and diagnostic tools for testing
 Open MPW and chipIgnite projects using Caravel.  It also provides schematics, layout and gerber files for PCB evaluation and breakout boards.
 
-## MPW-2 & MPW-3 Project Owners
-
-See the README for the the Nucleo automated [test setup here](firmware/mpw2-5/nucleo)
+Additionally, it contains firmware developed to test the MPW-5 (ALU XOR) chip. [MPW-5 ALU_XOR](https://github.com/Janavind/My_alu_xor)
 
 ## chipIgnite Projects (including Stanford)
 
@@ -57,3 +55,11 @@ The current evaluation board for Caravel can be [found here](hardware/developmen
 - `vddio` is connected to `3.3V` through J5. The trace has to be cut if it is supplied externally
 
 The most updated breakout board for Caravel can be found [here](hardware/breakout/caravel-M.2-card-QFN)
+
+## MPW-5 ALU_XOR
+
+The MPW-5 ALU_XOR RTL design consists of two 8-bit ALU modules whose outputs connect to an 8-bit XOR gate. The RTL
+can be viewed here: [MPW-5 ALU_XOR](https://github.com/Janavind/My_alu_xor). See block diagram below.
+
+![MPW-5 ALU XOR Block Diagram](ALUXOR.png)
+
