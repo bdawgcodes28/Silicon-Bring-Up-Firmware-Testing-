@@ -3,7 +3,8 @@
 This repo provides firmware examples, flash programming and diagnostic tools for testing
 Open MPW and chipIgnite projects using Caravel.  It also provides schematics, layout and gerber files for PCB evaluation and breakout boards.
 
-Additionally, it contains firmware developed to test the MPW-5 (ALU XOR) chip. [MPW-5 ALU_XOR](https://github.com/Janavind/My_alu_xor)
+Additionally, it contains firmware developed to test both the [MPW-5 ALU-XOR](https://github.com/Janavind/My_alu_xor)
+and [MPW-8 ALU-XOR](https://github.com/Janavind/mpw8/tree/main) chips.
 
 ## ChipIgnite Projects (including Stanford)
 

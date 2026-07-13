@@ -100,7 +100,7 @@ void main() {
 	// call setup routine and force update
 	configure_io();
 	reg_mprj_xfer = 1;
-	while (reg_mprj_xfer == 1) {}
+	while (reg_mprj_xfer == 1);
 	while (!(reg_power_good & (USER1_VCCD_POWER_GOOD | USER1_VDDA_POWER_GOOD))) {}
 
 	// initialize first logic logic analyzer registers
@@ -128,16 +128,19 @@ void main() {
 	// push variables to GPIO registers
 
 	uint32_t datal_val = ((uint32_t)input_A0 << 18) |
-                      ((uint32_t)input_B0 << 22) |
-                      ((uint32_t)input_A1 << 26) |
-                      (((uint32_t)input_B1 & 0x3) << 30);
+                      	 ((uint32_t)input_B0 << 22) |
+                         ((uint32_t)input_A1 << 26) |
+                         (((uint32_t)input_B1 & 0x3) << 30);
 
 	uint32_t datah_val = (((uint32_t)input_B1 >> 2) & 0x3)   |
-                      ((uint32_t)select_ALU1 << 2)           |
-                      ((uint32_t)select_ALU2 << 4);
+                         ((uint32_t)select_ALU1 << 2)        |
+                         ((uint32_t)select_ALU2 << 4);
 
 	reg_mprj_datal = datal_val;
 	reg_mprj_datah = datah_val;
+
+	reg_mprj_xfer = 1;
+	while (reg_mprj_xfer == 1);
 
 	// --------------------------------------------------------------------------
 	// each user_project on the chip receives one-bit of a 32-bit active
@@ -168,7 +171,7 @@ void main() {
 	reg_mprj_io_5 = GPIO_MODE_MGMT_STD_INPUT_NOPULL;
 	reg_mprj_io_6 = GPIO_MODE_MGMT_STD_OUTPUT;
 	reg_mprj_xfer = 1;
-	while (reg_mprj_xfer == 1) {}
+	while (reg_mprj_xfer == 1);
 
 	// enable uart
 	reg_uart_enable = 1;
